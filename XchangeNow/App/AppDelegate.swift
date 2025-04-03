@@ -5,7 +5,7 @@
 //  Created by Elmira Qurbanova on 02.04.25.
 //
 
-import UIKit  //fcff
+import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
