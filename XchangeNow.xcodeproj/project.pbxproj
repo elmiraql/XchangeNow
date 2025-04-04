@@ -3,32 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		99C3DB862D9F4BF700B87755 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */; };
+		99C95A8A2D9EF6AD00A97FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */; };
+		99C95A8B2D9EF6AD00A97FEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */; };
+		99C95A8C2D9EF6AD00A97FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */; };
+		99C95A8D2D9EF6AD00A97FEA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6C2D9EF6AD00A97FEA /* Currency.swift */; };
+		99C95A8E2D9EF6AD00A97FEA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6D2D9EF6AD00A97FEA /* Quote.swift */; };
+		99C95A8F2D9EF6AD00A97FEA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6F2D9EF6AD00A97FEA /* APIClient.swift */; };
+		99C95A902D9EF6AD00A97FEA /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A702D9EF6AD00A97FEA /* WebSocketManager.swift */; };
+		99C95A912D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */; };
+		99C95A922D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */; };
+		99C95A932D9EF6AD00A97FEA /* CurrencyConverterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */; };
+		99C95A942D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */; };
+		99C95A952D9EF6AD00A97FEA /* CurrencyConverterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */; };
+		99C95A962D9EF6AD00A97FEA /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */; };
+		99C95A972D9EF6AD00A97FEA /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A782D9EF6AD00A97FEA /* CurrencyConverterViewController.swift */; };
+		99C95A982D9EF6AD00A97FEA /* CurrencyConverterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A792D9EF6AD00A97FEA /* CurrencyConverterWorker.swift */; };
+		99C95A992D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */; };
+		99C95A9A2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */; };
+		99C95A9B2D9EF6AD00A97FEA /* OnlineQuotesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */; };
+		99C95A9C2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */; };
+		99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */; };
+		99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */; };
+		99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A812D9EF6AD00A97FEA /* OnlineQuotesWorker.swift */; };
+		99C95AA02D9EF6AD00A97FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A882D9EF6AD00A97FEA /* ViewController.swift */; };
+		99C95AA12D9EF6AD00A97FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C95A842D9EF6AD00A97FEA /* Assets.xcassets */; };
+		99C95AA32D9EF6AD00A97FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */; };
+		B99BD8351CDF6C272F2EDEBB /* Pods_XchangeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		050BF90242E69E7019D5D5EE /* Pods-XchangeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XchangeNow.release.xcconfig"; path = "Target Support Files/Pods-XchangeNow/Pods-XchangeNow.release.xcconfig"; sourceTree = "<group>"; };
+		6CF11BCF4B00C7430F960949 /* Pods-XchangeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XchangeNow.debug.xcconfig"; path = "Target Support Files/Pods-XchangeNow/Pods-XchangeNow.debug.xcconfig"; sourceTree = "<group>"; };
 		99ADEF282D9DC48000AFB275 /* XchangeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XchangeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99C95A6C2D9EF6AD00A97FEA /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		99C95A6D2D9EF6AD00A97FEA /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		99C95A6F2D9EF6AD00A97FEA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		99C95A702D9EF6AD00A97FEA /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterBuilder.swift; sourceTree = "<group>"; };
+		99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterInteractor.swift; sourceTree = "<group>"; };
+		99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterModels.swift; sourceTree = "<group>"; };
+		99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenter.swift; sourceTree = "<group>"; };
+		99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterRouter.swift; sourceTree = "<group>"; };
+		99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
+		99C95A782D9EF6AD00A97FEA /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
+		99C95A792D9EF6AD00A97FEA /* CurrencyConverterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterWorker.swift; sourceTree = "<group>"; };
+		99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesBuilder.swift; sourceTree = "<group>"; };
+		99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesInteractor.swift; sourceTree = "<group>"; };
+		99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesModels.swift; sourceTree = "<group>"; };
+		99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesPresenter.swift; sourceTree = "<group>"; };
+		99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesRouter.swift; sourceTree = "<group>"; };
+		99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesViewController.swift; sourceTree = "<group>"; };
+		99C95A812D9EF6AD00A97FEA /* OnlineQuotesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesWorker.swift; sourceTree = "<group>"; };
+		99C95A842D9EF6AD00A97FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99C95A852D9EF6AD00A97FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C95A862D9EF6AD00A97FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99C95A882D9EF6AD00A97FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XchangeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		99ADEF3A2D9DC48200AFB275 /* Exceptions for "XchangeNow" folder in "XchangeNow" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 99ADEF272D9DC48000AFB275 /* XchangeNow */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		99ADEF2A2D9DC48000AFB275 /* XchangeNow */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				99ADEF3A2D9DC48200AFB275 /* Exceptions for "XchangeNow" folder in "XchangeNow" target */,
-			);
-			path = XchangeNow;
-			sourceTree = "<group>";
-		};
+		99C3DB7F2D9F273000B87755 /* Dropdown */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Dropdown; sourceTree = "<group>"; };
+		99C3DB822D9F2EBE00B87755 /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+		99C3DB872D9F4C3E00B87755 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99BD8351CDF6C272F2EDEBB /* Pods_XchangeNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1765B69499FA33F39E138AF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF11BCF4B00C7430F960949 /* Pods-XchangeNow.debug.xcconfig */,
+				050BF90242E69E7019D5D5EE /* Pods-XchangeNow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		99ADEF1F2D9DC48000AFB275 = {
 			isa = PBXGroup;
 			children = (
-				99ADEF2A2D9DC48000AFB275 /* XchangeNow */,
+				99C95A892D9EF6AD00A97FEA /* XchangeNow */,
 				99ADEF292D9DC48000AFB275 /* Products */,
+				1765B69499FA33F39E138AF7 /* Pods */,
+				B29C3A858855275DFA261FE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +115,99 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		99C95A6B2D9EF6AD00A97FEA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */,
+				99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */,
+				99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		99C95A6E2D9EF6AD00A97FEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99C95A6C2D9EF6AD00A97FEA /* Currency.swift */,
+				99C95A6D2D9EF6AD00A97FEA /* Quote.swift */,
+				99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99C95A712D9EF6AD00A97FEA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				99C3DB872D9F4C3E00B87755 /* Services */,
+				99C95A6F2D9EF6AD00A97FEA /* APIClient.swift */,
+				99C95A702D9EF6AD00A97FEA /* WebSocketManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		99C95A7A2D9EF6AD00A97FEA /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */,
+				99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */,
+				99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */,
+				99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */,
+				99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */,
+				99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */,
+				99C95A782D9EF6AD00A97FEA /* CurrencyConverterViewController.swift */,
+				99C95A792D9EF6AD00A97FEA /* CurrencyConverterWorker.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		99C95A822D9EF6AD00A97FEA /* OnlineQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */,
+				99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */,
+				99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */,
+				99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */,
+				99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */,
+				99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */,
+				99C95A812D9EF6AD00A97FEA /* OnlineQuotesWorker.swift */,
+			);
+			path = OnlineQuotes;
+			sourceTree = "<group>";
+		};
+		99C95A832D9EF6AD00A97FEA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				99C95A7A2D9EF6AD00A97FEA /* CurrencyConverter */,
+				99C95A822D9EF6AD00A97FEA /* OnlineQuotes */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		99C95A892D9EF6AD00A97FEA /* XchangeNow */ = {
+			isa = PBXGroup;
+			children = (
+				99C3DB822D9F2EBE00B87755 /* Utils */,
+				99C3DB7F2D9F273000B87755 /* Dropdown */,
+				99C95A6B2D9EF6AD00A97FEA /* App */,
+				99C95A6E2D9EF6AD00A97FEA /* Models */,
+				99C95A712D9EF6AD00A97FEA /* Network */,
+				99C95A832D9EF6AD00A97FEA /* Scenes */,
+				99C95A842D9EF6AD00A97FEA /* Assets.xcassets */,
+				99C95A852D9EF6AD00A97FEA /* Info.plist */,
+				99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */,
+				99C95A882D9EF6AD00A97FEA /* ViewController.swift */,
+			);
+			path = XchangeNow;
+			sourceTree = "<group>";
+		};
+		B29C3A858855275DFA261FE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99ADEF3B2D9DC48200AFB275 /* Build configuration list for PBXNativeTarget "XchangeNow" */;
 			buildPhases = (
+				22117E44C00BA273D04627F9 /* [CP] Check Pods Manifest.lock */,
 				99ADEF242D9DC48000AFB275 /* Sources */,
 				99ADEF252D9DC48000AFB275 /* Frameworks */,
 				99ADEF262D9DC48000AFB275 /* Resources */,
@@ -74,11 +225,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				99ADEF2A2D9DC48000AFB275 /* XchangeNow */,
+				99C3DB7F2D9F273000B87755 /* Dropdown */,
+				99C3DB822D9F2EBE00B87755 /* Utils */,
+				99C3DB872D9F4C3E00B87755 /* Services */,
 			);
 			name = XchangeNow;
-			packageProductDependencies = (
-			);
 			productName = XchangeNow;
 			productReference = 99ADEF282D9DC48000AFB275 /* XchangeNow.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +250,7 @@
 				};
 			};
 			buildConfigurationList = 99ADEF232D9DC48000AFB275 /* Build configuration list for PBXProject "XchangeNow" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +258,9 @@
 				Base,
 			);
 			mainGroup = 99ADEF1F2D9DC48000AFB275;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				99C958992D9EA6C700A97FEA /* XCRemoteSwiftPackageReference "DropDown" */,
+			);
 			productRefGroup = 99ADEF292D9DC48000AFB275 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +275,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C95AA12D9EF6AD00A97FEA /* Assets.xcassets in Resources */,
+				99C95AA32D9EF6AD00A97FEA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22117E44C00BA273D04627F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XchangeNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99ADEF242D9DC48000AFB275 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C95A8A2D9EF6AD00A97FEA /* AppDelegate.swift in Sources */,
+				99C95A8B2D9EF6AD00A97FEA /* MainTabBarController.swift in Sources */,
+				99C95A8C2D9EF6AD00A97FEA /* SceneDelegate.swift in Sources */,
+				99C95A8D2D9EF6AD00A97FEA /* Currency.swift in Sources */,
+				99C3DB862D9F4BF700B87755 /* CurrencyRate.swift in Sources */,
+				99C95A8E2D9EF6AD00A97FEA /* Quote.swift in Sources */,
+				99C95A8F2D9EF6AD00A97FEA /* APIClient.swift in Sources */,
+				99C95A902D9EF6AD00A97FEA /* WebSocketManager.swift in Sources */,
+				99C95A912D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift in Sources */,
+				99C95A922D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift in Sources */,
+				99C95A932D9EF6AD00A97FEA /* CurrencyConverterModels.swift in Sources */,
+				99C95A942D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift in Sources */,
+				99C95A952D9EF6AD00A97FEA /* CurrencyConverterRouter.swift in Sources */,
+				99C95A962D9EF6AD00A97FEA /* CurrencyConverterView.swift in Sources */,
+				99C95A972D9EF6AD00A97FEA /* CurrencyConverterViewController.swift in Sources */,
+				99C95A982D9EF6AD00A97FEA /* CurrencyConverterWorker.swift in Sources */,
+				99C95A992D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift in Sources */,
+				99C95A9A2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift in Sources */,
+				99C95A9B2D9EF6AD00A97FEA /* OnlineQuotesModels.swift in Sources */,
+				99C95A9C2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift in Sources */,
+				99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */,
+				99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */,
+				99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */,
+				99C95AA02D9EF6AD00A97FEA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99C95A862D9EF6AD00A97FEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		99ADEF3C2D9DC48200AFB275 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF11BCF4B00C7430F960949 /* Pods-XchangeNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -167,6 +383,7 @@
 		};
 		99ADEF3D2D9DC48200AFB275 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050BF90242E69E7019D5D5EE /* Pods-XchangeNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -333,6 +550,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99C958992D9EA6C700A97FEA /* XCRemoteSwiftPackageReference "DropDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AssistoLab/DropDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 99ADEF202D9DC48000AFB275 /* Project object */;
 }

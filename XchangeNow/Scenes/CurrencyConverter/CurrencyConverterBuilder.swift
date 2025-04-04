@@ -15,11 +15,10 @@ enum CurrencyConverterBuilder {
         let router = CurrencyConverterRouter()
         let worker = CurrencyConverterWorker()
 
-//        viewController.interactor = interactor
-//        interactor.presenter = presenter
-//        interactor.worker = worker
-//        presenter.viewController = viewController
-//        router.viewController = viewController
+        viewController.interactor = interactor
+        interactor.presenter = presenter
+        interactor.worker = worker
+        presenter.viewController = viewController
 
         return viewController
     }
