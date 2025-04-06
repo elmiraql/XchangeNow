@@ -99,7 +99,6 @@ extension OnlineQuotesInteractor: OnlineQuotesServiceDelegate {
         guard !quotes.isEmpty else { return }
 
         let newSnapshot = snapshot(from: quotes)
-        let oldSnapshot = snapshot(from: allQuotes)
 
         let now = Date()
         let hasChanged = newSnapshot != snapshot(from: allQuotes)

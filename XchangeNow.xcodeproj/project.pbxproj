@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		99C3DB862D9F4BF700B87755 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */; };
 		99C3DB8F2DA06C5000B87755 /* OnlineQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB8E2DA06C5000B87755 /* OnlineQuotesView.swift */; };
-		99C3DB982DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */; };
 		99C95A8A2D9EF6AD00A97FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */; };
 		99C95A8B2D9EF6AD00A97FEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */; };
 		99C95A8C2D9EF6AD00A97FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */; };
@@ -17,7 +16,6 @@
 		99C95A8E2D9EF6AD00A97FEA /* OnlineQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6D2D9EF6AD00A97FEA /* OnlineQuote.swift */; };
 		99C95A912D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */; };
 		99C95A922D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */; };
-		99C95A932D9EF6AD00A97FEA /* CurrencyConverterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */; };
 		99C95A942D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */; };
 		99C95A952D9EF6AD00A97FEA /* CurrencyConverterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */; };
 		99C95A962D9EF6AD00A97FEA /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */; };
@@ -25,7 +23,6 @@
 		99C95A982D9EF6AD00A97FEA /* CurrencyConverterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A792D9EF6AD00A97FEA /* CurrencyConverterWorker.swift */; };
 		99C95A992D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */; };
 		99C95A9A2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */; };
-		99C95A9B2D9EF6AD00A97FEA /* OnlineQuotesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */; };
 		99C95A9C2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */; };
 		99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */; };
 		99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */; };
@@ -41,7 +38,6 @@
 		99ADEF282D9DC48000AFB275 /* XchangeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XchangeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 		99C3DB8E2DA06C5000B87755 /* OnlineQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesView.swift; sourceTree = "<group>"; };
-		99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterInteractorTests.swift; sourceTree = "<group>"; };
 		99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +45,6 @@
 		99C95A6D2D9EF6AD00A97FEA /* OnlineQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuote.swift; sourceTree = "<group>"; };
 		99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterBuilder.swift; sourceTree = "<group>"; };
 		99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterInteractor.swift; sourceTree = "<group>"; };
-		99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterModels.swift; sourceTree = "<group>"; };
 		99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenter.swift; sourceTree = "<group>"; };
 		99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterRouter.swift; sourceTree = "<group>"; };
 		99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
@@ -57,7 +52,6 @@
 		99C95A792D9EF6AD00A97FEA /* CurrencyConverterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterWorker.swift; sourceTree = "<group>"; };
 		99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesBuilder.swift; sourceTree = "<group>"; };
 		99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesInteractor.swift; sourceTree = "<group>"; };
-		99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesModels.swift; sourceTree = "<group>"; };
 		99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesPresenter.swift; sourceTree = "<group>"; };
 		99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesRouter.swift; sourceTree = "<group>"; };
 		99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +93,6 @@
 		99ADEF1F2D9DC48000AFB275 = {
 			isa = PBXGroup;
 			children = (
-				99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */,
 				99C95A892D9EF6AD00A97FEA /* XchangeNow */,
 				99ADEF292D9DC48000AFB275 /* Products */,
 				1765B69499FA33F39E138AF7 /* Pods */,
@@ -148,7 +141,6 @@
 			children = (
 				99C95A722D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift */,
 				99C95A732D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift */,
-				99C95A742D9EF6AD00A97FEA /* CurrencyConverterModels.swift */,
 				99C95A752D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift */,
 				99C95A762D9EF6AD00A97FEA /* CurrencyConverterRouter.swift */,
 				99C95A772D9EF6AD00A97FEA /* CurrencyConverterView.swift */,
@@ -163,7 +155,6 @@
 			children = (
 				99C95A7B2D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift */,
 				99C95A7C2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift */,
-				99C95A7D2D9EF6AD00A97FEA /* OnlineQuotesModels.swift */,
 				99C95A7E2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift */,
 				99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */,
 				99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */,
@@ -321,7 +312,6 @@
 				99C95A8E2D9EF6AD00A97FEA /* OnlineQuote.swift in Sources */,
 				99C95A912D9EF6AD00A97FEA /* CurrencyConverterBuilder.swift in Sources */,
 				99C95A922D9EF6AD00A97FEA /* CurrencyConverterInteractor.swift in Sources */,
-				99C95A932D9EF6AD00A97FEA /* CurrencyConverterModels.swift in Sources */,
 				99C95A942D9EF6AD00A97FEA /* CurrencyConverterPresenter.swift in Sources */,
 				99C95A952D9EF6AD00A97FEA /* CurrencyConverterRouter.swift in Sources */,
 				99C95A962D9EF6AD00A97FEA /* CurrencyConverterView.swift in Sources */,
@@ -329,11 +319,9 @@
 				99C95A982D9EF6AD00A97FEA /* CurrencyConverterWorker.swift in Sources */,
 				99C95A992D9EF6AD00A97FEA /* OnlineQuotesBuilder.swift in Sources */,
 				99C95A9A2D9EF6AD00A97FEA /* OnlineQuotesInteractor.swift in Sources */,
-				99C95A9B2D9EF6AD00A97FEA /* OnlineQuotesModels.swift in Sources */,
 				99C95A9C2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift in Sources */,
 				99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */,
 				99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */,
-				99C3DB982DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift in Sources */,
 				99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
