@@ -19,6 +19,7 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
     private let worker = OnlineQuotesWorker()
     private var allQuotes: [OnlineQuote] = []
     var hiddenSymbols: Set<String> = []
+    private var lastCacheTime: Date?
     
     init() {
         loadCachedQuotes()
@@ -80,6 +81,16 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
         UserDefaults.standard.removeObject(forKey: "cachedQuotes")
         print("кэш очищен")
     }
+    
+    private func snapshot(from quotes: [OnlineQuote]) -> [String: String] {
+        Dictionary(uniqueKeysWithValues:
+            quotes.map { quote in
+                let key = quote.symbol
+                let value = "\(quote.bidPrice)-\(quote.askPrice)-\(quote.spread)"
+                return (key, value)
+            }
+        )
+    }
 }
 
 extension OnlineQuotesInteractor: OnlineQuotesServiceDelegate {
@@ -87,8 +98,16 @@ extension OnlineQuotesInteractor: OnlineQuotesServiceDelegate {
     func didReceiveQuotes(_ quotes: [OnlineQuote]) {
         guard !quotes.isEmpty else { return }
 
-        if allQuotes.map({$0.symbol}) != quotes.map({$0.symbol}) {
-            cacheQuotes(quotes) // сохранение в кэш
+        let newSnapshot = snapshot(from: quotes)
+        let oldSnapshot = snapshot(from: allQuotes)
+
+        let now = Date()
+        let hasChanged = newSnapshot != snapshot(from: allQuotes)
+        let hasEnoughDelay = lastCacheTime.map { now.timeIntervalSince($0) > 5 } ?? true
+
+        if hasChanged && hasEnoughDelay {
+            cacheQuotes(quotes)
+            lastCacheTime = now
         }
 
         allQuotes = quotes

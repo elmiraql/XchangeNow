@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		99C3DB862D9F4BF700B87755 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */; };
 		99C3DB8F2DA06C5000B87755 /* OnlineQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB8E2DA06C5000B87755 /* OnlineQuotesView.swift */; };
+		99C3DB982DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */; };
 		99C95A8A2D9EF6AD00A97FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */; };
 		99C95A8B2D9EF6AD00A97FEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */; };
 		99C95A8C2D9EF6AD00A97FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		99ADEF282D9DC48000AFB275 /* XchangeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XchangeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 		99C3DB8E2DA06C5000B87755 /* OnlineQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesView.swift; sourceTree = "<group>"; };
+		99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterInteractorTests.swift; sourceTree = "<group>"; };
 		99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		99ADEF1F2D9DC48000AFB275 = {
 			isa = PBXGroup;
 			children = (
+				99C3DB972DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift */,
 				99C95A892D9EF6AD00A97FEA /* XchangeNow */,
 				99ADEF292D9DC48000AFB275 /* Products */,
 				1765B69499FA33F39E138AF7 /* Pods */,
@@ -330,6 +333,7 @@
 				99C95A9C2D9EF6AD00A97FEA /* OnlineQuotesPresenter.swift in Sources */,
 				99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */,
 				99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */,
+				99C3DB982DA2DAAE00B87755 /* CurrencyConverterInteractorTests.swift in Sources */,
 				99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

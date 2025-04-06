@@ -29,8 +29,8 @@ final class OnlineQuoteCell: UITableViewCell {
     }
 
     private func setupHideButton() {
-        hideButton.setImage(UIImage(systemName: "trash"), for: .normal)
-        hideButton.tintColor = .systemRed
+        hideButton.setTitle("Hide", for: .normal)
+        hideButton.setTitleColor(.red, for: .normal)
         hideButton.addTarget(self, action: #selector(hideTapped), for: .touchUpInside)
         hideButton.frame = CGRect(x: 0, y: 0, width: 60, height: 30)
         accessoryView = hideButton
@@ -47,18 +47,24 @@ final class OnlineQuoteCell: UITableViewCell {
         let arrow = viewModel.trend == "up" ? "⬆️" : "⬇️"
         var content = defaultContentConfiguration()
         content.text = "\(viewModel.symbol) \(arrow)"
-        content.secondaryText = "Bid: \(viewModel.bid)    Ask: \(viewModel.ask)   Spread: \(viewModel.spread)\nLow price: \(viewModel.low)    High price: \(viewModel.high)\nLast update time: \(formatTime(viewModel.time))"
+        content.textProperties.font = .boldSystemFont(ofSize: 17)
+        content.secondaryText = "Bid: \(viewModel.bid)    Ask: \(viewModel.ask)   Spread: \(viewModel.spread)\nLow price: \(viewModel.low)    High price: \(viewModel.high)\nLast update time: \(formatToShortDate(viewModel.time))"
         content.secondaryTextProperties.numberOfLines = 3
         contentConfiguration = content
     }
 
-    private func formatTime(_ isoString: String) -> String {
-        let formatter = ISO8601DateFormatter()
-        if let date = formatter.date(from: isoString) {
-            let output = DateFormatter()
-            output.dateFormat = "HH:mm:ss"
-            return output.string(from: date)
+    private func formatToShortDate(_ isoString: String) -> String {
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        inputFormatter.locale = Locale(identifier: "en_US_POSIX")
+        inputFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+
+        if let date = inputFormatter.date(from: isoString) {
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = "dd.MM.yyyy"
+            return outputFormatter.string(from: date)
         }
+
         return isoString
     }
 }
