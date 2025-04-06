@@ -29,7 +29,6 @@
 		99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A7F2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift */; };
 		99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A802D9EF6AD00A97FEA /* OnlineQuotesViewController.swift */; };
 		99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A812D9EF6AD00A97FEA /* OnlineQuotesWorker.swift */; };
-		99C95AA02D9EF6AD00A97FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C95A882D9EF6AD00A97FEA /* ViewController.swift */; };
 		99C95AA12D9EF6AD00A97FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C95A842D9EF6AD00A97FEA /* Assets.xcassets */; };
 		99C95AA32D9EF6AD00A97FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */; };
 		B99BD8351CDF6C272F2EDEBB /* Pods_XchangeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */; };
@@ -64,7 +63,6 @@
 		99C95A842D9EF6AD00A97FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C95A852D9EF6AD00A97FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C95A862D9EF6AD00A97FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99C95A882D9EF6AD00A97FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XchangeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,7 +192,6 @@
 				99C95A842D9EF6AD00A97FEA /* Assets.xcassets */,
 				99C95A852D9EF6AD00A97FEA /* Info.plist */,
 				99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */,
-				99C95A882D9EF6AD00A97FEA /* ViewController.swift */,
 			);
 			path = XchangeNow;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				99C95A9D2D9EF6AD00A97FEA /* OnlineQuotesRouter.swift in Sources */,
 				99C95A9E2D9EF6AD00A97FEA /* OnlineQuotesViewController.swift in Sources */,
 				99C95A9F2D9EF6AD00A97FEA /* OnlineQuotesWorker.swift in Sources */,
-				99C95AA02D9EF6AD00A97FEA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

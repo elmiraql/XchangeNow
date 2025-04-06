@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  XchangeNow
 //
-//  Created by Elmira Qurbanova on 02.04.25.
+//  Created by Elmira on 02.04.25.
 //
 
 import UIKit

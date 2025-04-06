@@ -2,7 +2,7 @@
 //  OnlineQuotesInteractor.swift
 //  XchangeNow
 //
-//  Created by Elmira Qurbanova on 03.04.25.
+//  Created by Elmira on 03.04.25.
 //
 
 import Foundation
@@ -21,7 +21,9 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
     var hiddenSymbols: Set<String> = []
     
     init() {
+        loadCachedQuotes()
         worker.delegate = self
+//        clearQuotesCache()
     }
     
     func connectToQuotes() {
@@ -43,7 +45,6 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
     
     private func filterAndPresentQuotes() {
         let visibleQuotes = allQuotes.filter { !hiddenSymbols.contains($0.symbol) }
-//        print(visibleQuotes)
         presenter?.presentQuotes(visibleQuotes)
 //        presenter?.presentQuotes(allQuotes)
     }
@@ -52,12 +53,44 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
         hiddenSymbols.removeAll()
         filterAndPresentQuotes()
     }
+    
+    private func cacheQuotes(_ quotes: [OnlineQuote]) {
+        do {
+            let data = try JSONEncoder().encode(quotes)
+            UserDefaults.standard.set(data, forKey: "cachedQuotes")
+            print("кэш сохранился")
+        } catch {
+            print("кэш не сохранился:", error)
+        }
+    }
+    
+    private func loadCachedQuotes() {
+        guard let data = UserDefaults.standard.data(forKey: "cachedQuotes") else { return }
+        do {
+            let quotes = try JSONDecoder().decode([OnlineQuote].self, from: data)
+            self.allQuotes = quotes
+            filterAndPresentQuotes()
+            print("кэш извлечен")
+        } catch {
+            print("ошибка чтения кэша:", error)
+        }
+    }
+    
+    func clearQuotesCache() {
+        UserDefaults.standard.removeObject(forKey: "cachedQuotes")
+        print("кэш очищен")
+    }
 }
 
 extension OnlineQuotesInteractor: OnlineQuotesServiceDelegate {
     
     func didReceiveQuotes(_ quotes: [OnlineQuote]) {
         guard !quotes.isEmpty else { return }
+
+        if allQuotes.map({$0.symbol}) != quotes.map({$0.symbol}) {
+            cacheQuotes(quotes) // сохранение в кэш
+        }
+
         allQuotes = quotes
         filterAndPresentQuotes()
     }

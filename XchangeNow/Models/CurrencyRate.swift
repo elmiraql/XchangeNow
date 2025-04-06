@@ -2,7 +2,7 @@
 //  CurrencyRate.swift
 //  XchangeNow
 //
-//  Created by Elmira Qurbanova on 04.04.25.
+//  Created by Elmira on 04.04.25.
 //
 
 import Foundation
