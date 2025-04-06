@@ -51,7 +51,7 @@ final class OnlineQuotesService: NSObject {
                 print("websocket error:", error)
                 self.isConnected = false
                 self.delegate?.didUpdateConnectionStatus(connected: false)
-                
+                self.reconnect()
             case .success(let message):
                 switch message {
                 case .string(let text):
@@ -77,6 +77,14 @@ final class OnlineQuotesService: NSObject {
             print("parsing error:", error)
         }
     }
+    
+    private func reconnect() {
+        guard !isConnected else { return }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+            self?.connect()
+        }
+    }
 }
 
 extension OnlineQuotesService: URLSessionWebSocketDelegate {
@@ -84,6 +92,8 @@ extension OnlineQuotesService: URLSessionWebSocketDelegate {
                     didCloseWith closeCode: URLSessionWebSocketTask.CloseCode,
                     reason: Data?) {
         print("websocket closed")
+        isConnected = false
         delegate?.didUpdateConnectionStatus(connected: false)
+        reconnect()
     }
 }
