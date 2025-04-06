@@ -15,17 +15,19 @@ final class MainTabBarController: UITabBarController {
         setupTabs()
         
         tabBar.barTintColor = .black
-        tabBar.tintColor = .purple
+        tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .lightGray
     }
     
     private func setupTabs() {
         let currencyVC = CurrencyConverterBuilder.build()
-        currencyVC.tabBarItem = UITabBarItem(title: "Converter", image: UIImage(systemName: "dollarsign.circle"), tag: 0)
-        
+        let currencyNav = UINavigationController(rootViewController: currencyVC)
+        currencyNav.tabBarItem = UITabBarItem(title: "Converter", image: UIImage(systemName: "dollarsign.circle"), tag: 0)
+
         let quotesVC = OnlineQuotesBuilder.build()
-        quotesVC.tabBarItem = UITabBarItem(title: "Quotes", image: UIImage(systemName: "chart.bar"), tag: 1)
-        
-        viewControllers = [currencyVC, quotesVC]
+        let quotesNav = UINavigationController(rootViewController: quotesVC)
+        quotesNav.tabBarItem = UITabBarItem(title: "Quotes", image: UIImage(systemName: "chart.bar"), tag: 1)
+
+        viewControllers = [currencyNav, quotesNav]
     }
 }

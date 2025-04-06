@@ -19,10 +19,10 @@ final class CurrencyConverterView: UIView {
     
     var title: UILabel = {
         let label = UILabel()
-        label.text = "Convert any \nCurrency"
+        label.text = "Convert any currency"
         label.numberOfLines = 0
-        label.textColor = .white
-        label.font = .boldSystemFont(ofSize: 32)
+        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 28)
         return label
     }()
     
@@ -75,7 +75,6 @@ final class CurrencyConverterView: UIView {
 
     let resultLabel: UILabel = {
         let label = UILabel()
-//        label.text = "≈ 0.00"
         label.font = .boldSystemFont(ofSize: 24)
         label.textAlignment = .center
         return label
@@ -90,9 +89,8 @@ final class CurrencyConverterView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-
     private func setupLayout() {
-        backgroundColor = UIColor(named: "purpleColor")
+        backgroundColor = .systemGray6 
         
         let hStack = UIStackView(arrangedSubviews: [
         fromCurrencyButton, toLabel, toCurrencyButton
@@ -112,8 +110,7 @@ final class CurrencyConverterView: UIView {
         addSubViews(title)
         addSubview(vStack)
         
-        title.anchor(top: safeAreaLayoutGuide.topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
-
+        title.anchor(top: safeAreaLayoutGuide.topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 64, paddingLeft: 32, paddingRight: 32)
         bgView.anchor(top: title.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16)
         
         vStack.anchor(top: bgView.topAnchor, left: bgView.leftAnchor, bottom: bgView.bottomAnchor, right: bgView.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingBottom: 16, paddingRight: 16)
