@@ -7,7 +7,12 @@
 
 import Foundation
 
-final class CurrencyConverterWorker {
+protocol CurrencyConverterWorking {
+    func fetchCurrencyList() async throws -> [Currency]
+    func fetchRate(from baseCurrency: String, date: String) async throws -> [CurrencyRate]
+}
+
+final class CurrencyConverterWorker: CurrencyConverterWorking {
 
     private let service = CurrencyService()
 

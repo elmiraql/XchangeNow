@@ -10,14 +10,13 @@ import UIKit
 enum CurrencyConverterBuilder {
     static func build() -> UIViewController {
         let viewController = CurrencyConverterViewController()
-        let interactor = CurrencyConverterInteractor()
         let presenter = CurrencyConverterPresenter()
-        let router = CurrencyConverterRouter()
         let worker = CurrencyConverterWorker()
+        let interactor = CurrencyConverterInteractor(worker: worker, presenter: presenter)
+        let router = CurrencyConverterRouter()
 
         viewController.interactor = interactor
         interactor.presenter = presenter
-        interactor.worker = worker
         presenter.viewController = viewController
 
         return viewController

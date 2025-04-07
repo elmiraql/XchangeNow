@@ -15,7 +15,13 @@ protocol CurrencyConverterBusinessLogic {
 class CurrencyConverterInteractor: CurrencyConverterBusinessLogic {
     
     var presenter: CurrencyConverterPresentationLogic?
-    var worker = CurrencyConverterWorker()
+//    var worker = CurrencyConverterWorker()
+     let worker: CurrencyConverterWorking
+    
+    init(worker: CurrencyConverterWorking, presenter: CurrencyConverterPresentationLogic) {
+           self.worker = worker
+           self.presenter = presenter
+       }
     
     func loadCurrencyList() async {
         do {

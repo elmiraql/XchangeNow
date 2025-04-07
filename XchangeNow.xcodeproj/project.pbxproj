@@ -32,12 +32,23 @@
 		B99BD8351CDF6C272F2EDEBB /* Pods_XchangeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1E61A0EFDE11FF63CEE94 /* Pods_XchangeNow.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		99C3DBA12DA3F0CD00B87755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99ADEF202D9DC48000AFB275 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99ADEF272D9DC48000AFB275;
+			remoteInfo = XchangeNow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		050BF90242E69E7019D5D5EE /* Pods-XchangeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XchangeNow.release.xcconfig"; path = "Target Support Files/Pods-XchangeNow/Pods-XchangeNow.release.xcconfig"; sourceTree = "<group>"; };
 		6CF11BCF4B00C7430F960949 /* Pods-XchangeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XchangeNow.debug.xcconfig"; path = "Target Support Files/Pods-XchangeNow/Pods-XchangeNow.debug.xcconfig"; sourceTree = "<group>"; };
 		99ADEF282D9DC48000AFB275 /* XchangeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XchangeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C3DB852D9F4BF700B87755 /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 		99C3DB8E2DA06C5000B87755 /* OnlineQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesView.swift; sourceTree = "<group>"; };
+		99C3DB9D2DA3F0CD00B87755 /* XchangeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XchangeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C95A682D9EF6AD00A97FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C95A692D9EF6AD00A97FEA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		99C95A6A2D9EF6AD00A97FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 		99C3DB822D9F2EBE00B87755 /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
 		99C3DB872D9F4C3E00B87755 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 		99C3DB902DA06C6A00B87755 /* Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Cells; sourceTree = "<group>"; };
+		99C3DB9E2DA3F0CD00B87755 /* XchangeNowTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = XchangeNowTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B99BD8351CDF6C272F2EDEBB /* Pods_XchangeNow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C3DB9A2DA3F0CD00B87755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				99C95A892D9EF6AD00A97FEA /* XchangeNow */,
+				99C3DB9E2DA3F0CD00B87755 /* XchangeNowTests */,
 				99ADEF292D9DC48000AFB275 /* Products */,
 				1765B69499FA33F39E138AF7 /* Pods */,
 				B29C3A858855275DFA261FE6 /* Frameworks */,
@@ -104,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				99ADEF282D9DC48000AFB275 /* XchangeNow.app */,
+				99C3DB9D2DA3F0CD00B87755 /* XchangeNowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +246,29 @@
 			productReference = 99ADEF282D9DC48000AFB275 /* XchangeNow.app */;
 			productType = "com.apple.product-type.application";
 		};
+		99C3DB9C2DA3F0CD00B87755 /* XchangeNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C3DBA32DA3F0CD00B87755 /* Build configuration list for PBXNativeTarget "XchangeNowTests" */;
+			buildPhases = (
+				99C3DB992DA3F0CD00B87755 /* Sources */,
+				99C3DB9A2DA3F0CD00B87755 /* Frameworks */,
+				99C3DB9B2DA3F0CD00B87755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99C3DBA22DA3F0CD00B87755 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99C3DB9E2DA3F0CD00B87755 /* XchangeNowTests */,
+			);
+			name = XchangeNowTests;
+			packageProductDependencies = (
+			);
+			productName = XchangeNowTests;
+			productReference = 99C3DB9D2DA3F0CD00B87755 /* XchangeNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,11 +276,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					99ADEF272D9DC48000AFB275 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					99C3DB9C2DA3F0CD00B87755 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 99ADEF272D9DC48000AFB275;
 					};
 				};
 			};
@@ -257,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				99ADEF272D9DC48000AFB275 /* XchangeNow */,
+				99C3DB9C2DA3F0CD00B87755 /* XchangeNowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +317,13 @@
 			files = (
 				99C95AA12D9EF6AD00A97FEA /* Assets.xcassets in Resources */,
 				99C95AA32D9EF6AD00A97FEA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C3DB9B2DA3F0CD00B87755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +382,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99C3DB992DA3F0CD00B87755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99C3DBA22DA3F0CD00B87755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99ADEF272D9DC48000AFB275 /* XchangeNow */;
+			targetProxy = 99C3DBA12DA3F0CD00B87755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		99C95A872D9EF6AD00A97FEA /* LaunchScreen.storyboard */ = {
@@ -355,6 +426,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +455,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +588,44 @@
 			};
 			name = Release;
 		};
+		99C3DBA42DA3F0CD00B87755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = URJBK2A2KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmira.XchangeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XchangeNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XchangeNow";
+			};
+			name = Debug;
+		};
+		99C3DBA52DA3F0CD00B87755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = URJBK2A2KA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmira.XchangeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XchangeNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XchangeNow";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -532,6 +643,15 @@
 			buildConfigurations = (
 				99ADEF3C2D9DC48200AFB275 /* Debug */,
 				99ADEF3D2D9DC48200AFB275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99C3DBA32DA3F0CD00B87755 /* Build configuration list for PBXNativeTarget "XchangeNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C3DBA42DA3F0CD00B87755 /* Debug */,
+				99C3DBA52DA3F0CD00B87755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
