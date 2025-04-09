@@ -11,8 +11,8 @@ enum OnlineQuotesBuilder {
     
     static func build() -> UIViewController {
         let viewController = OnlineQuotesViewController()
-        let interactor = OnlineQuotesInteractor()
         let presenter = OnlineQuotesPresenter()
+        let interactor = OnlineQuotesInteractor(presenter: presenter)
         
         viewController.interactor = interactor
         interactor.presenter = presenter

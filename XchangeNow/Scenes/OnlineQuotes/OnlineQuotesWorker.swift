@@ -13,6 +13,7 @@ protocol OnlineQuotesWorkerDelegate: AnyObject {
 }
 
 final class OnlineQuotesWorker {
+    
     weak var delegate: OnlineQuotesWorkerDelegate?
     private let service = OnlineQuotesService()
 

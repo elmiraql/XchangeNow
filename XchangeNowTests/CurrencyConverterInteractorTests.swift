@@ -52,20 +52,22 @@ final class CurrencyConverterInteractorTests: XCTestCase {
     }
     
     final class MockWorkerWithError: CurrencyConverterWorking {
+        
         func fetchCurrencyList() async throws -> [Currency] {
             throw URLError(.notConnectedToInternet)
         }
-
+        
         func fetchRate(from baseCurrency: String, date: String) async throws -> [CurrencyRate] {
-                throw URLError(.badServerResponse)
-            }
+            throw URLError(.badServerResponse)
+        }
     }
     
     final class MockWorkerMissingRate: CurrencyConverterWorking {
+        
         func fetchCurrencyList() async throws -> [Currency] {
             return []
         }
-
+        
         func fetchRate(from baseCurrency: String, date: String) async throws -> [CurrencyRate] {
             return [
                 CurrencyRate(from: "USD", to: "EUR", result: 0.9, date: "2025-04-07")

@@ -21,11 +21,16 @@ final class OnlineQuotesInteractor: OnlineQuotesBusinessLogic, OnlineQuotesWorke
     var hiddenSymbols: Set<String> = []
     private var lastCacheTime: Date?
     
-    init() {
-        loadCachedQuotes()
-        worker.delegate = self
+//    init() {
+//        loadCachedQuotes()
+//        worker.delegate = self
 //        clearQuotesCache()
-    }
+//    }
+    init(presenter: OnlineQuotesPresentationLogic?) {
+           self.presenter = presenter
+           loadCachedQuotes()
+           worker.delegate = self
+       }
     
     func connectToQuotes() {
         worker.connect()
