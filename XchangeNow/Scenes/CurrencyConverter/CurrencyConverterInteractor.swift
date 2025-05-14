@@ -28,7 +28,7 @@ class CurrencyConverterInteractor: CurrencyConverterBusinessLogic {
             let currencies = try await worker.fetchCurrencyList()
             presenter?.presentCurrencyList(currencies)
         } catch {
-            presenter?.presentError("failed to load currency list")
+            presenter?.presentError("невозможно загрузить список валют")
         }
     }
     
@@ -47,11 +47,11 @@ class CurrencyConverterInteractor: CurrencyConverterBusinessLogic {
                 presenter?.presentConversionResult(converted)
 
             } else {
-                presenter?.presentError("rate not found for \(from) → \(to)")
+                presenter?.presentError("конвертация невозможна \(from) → \(to)")
             }
 
         } catch {
-            presenter?.presentError("conversion failed: \(error.localizedDescription)")
+            presenter?.presentError("конвертация невозможна: \(error.localizedDescription)")
         }
     }
     

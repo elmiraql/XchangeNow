@@ -91,7 +91,7 @@ extension OnlineQuotesService: URLSessionWebSocketDelegate {
     func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask,
                     didCloseWith closeCode: URLSessionWebSocketTask.CloseCode,
                     reason: Data?) {
-        print("websocket closed")
+        print("вебсокет закрылся")
         isConnected = false
         delegate?.didUpdateConnectionStatus(connected: false)
         reconnect()

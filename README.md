@@ -1,4 +1,6 @@
-# XchangeNow
+# XchangeNow iOS App -  Technical assignment for an iOS Developer position.  
+
+Created as part of a hiring process.
 
 An iOS application with two main features:
 
